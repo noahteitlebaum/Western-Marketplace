@@ -16,7 +16,7 @@ function NavBar() {
 
             {/* Push this element to the right most part of the navbar. */}
             <div className=""> 
-              <a href="/Signup">Sign up</a>
+              <a href="/Signup">Sign Up</a>
             </div>
           </nav>
         </>
