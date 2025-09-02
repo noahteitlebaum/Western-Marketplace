@@ -13,8 +13,8 @@ function NavBar() {
                 <Link to = "/browse" className="nav-link"> Browse </Link>
                 <Link to = "/sell" className="nav-link"> Sell </Link>
             </div>
-            
-            // Push this element to the right most part of the navbar.
+
+            {/* Push this element to the right most part of the navbar. */}
             <div className=""> 
               <a href="/Signup">Sign up</a>
             </div>
