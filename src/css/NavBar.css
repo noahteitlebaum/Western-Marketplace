@@ -1,32 +1,32 @@
 .logo {
     width: 150px;
     height: 150px;
-    position: relative;
-    margin-right: 3em;
 }
 
 .navbar {
-    position: relative;
-    top: -280px;   /* positive moves it DOWN */
-    left: -560px;   /* positive moves it RIGHT */
-    padding: 1rem 2rem;
+    width: 100%;
+    padding: 0 2rem;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #F8F8F8;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
 }
 
 .navbar-links {
+    padding: 5px;
     display: flex;
     gap: 2rem;
 }
 
 .nav-link {
-    color: purple;
+    color: black;
     font-size: 3rem;
-    -webkit-text-stroke: 2px black;    
     padding: 10px;
 }
 .nav-link:hover {
-    color: white;
+    color: #555555;
 }
