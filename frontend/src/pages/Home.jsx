@@ -15,7 +15,7 @@ function Home() {
 
     return (
         <>
-            <div className="western-campus"> 
+            <div className="banner"> 
                 <img src={WesternCampus} alt="Western Campus" className="western-campus-img"/>
 
                 <div className="banner-overlay">
@@ -36,6 +36,9 @@ function Home() {
                         <button type="submit" className="search-button">Search</button>
                     </form>
                 </div>
+            </div>
+            <div>
+               <h2 className="browse-title">Browse By Category</h2> 
             </div>
         </>
     )
