@@ -115,31 +115,31 @@
   flex-shrink: 0;
 }
 
-.textbooks .category-box, 
+.textbooks, 
 .textbooks .category-icon-circle {
     background-color: #ebf4ff;
     border-color: #2b6cb0;
 }
 
-.electronics .category-box, 
+.electronics, 
 .electronics .category-icon-circle {
     background-color: #f3e8ff;
     border-color: #805ad5;
 }
 
-.housing .category-box, 
+.housing, 
 .housing .category-icon-circle {
     background-color: #e6fffa;
     border-color: #38a169;
 }
 
-.furniture .category-box, 
+.furniture, 
 .furniture .category-icon-circle {
     background-color: #fffaf0;
     border-color: #dd6b20;
 }
 
-.transportation .category-box, 
+.transportation, 
 .transportation .category-icon-circle {
     background-color: #ffe5e5;
     border-color: #e53e3e;
@@ -153,14 +153,16 @@
 }
 
 .category-title {
-  font-size: 1.2rem;
-  font-weight: 600;
-  color: #222;
-  margin-bottom: 8px;
+    margin-top: -2px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #222;
+    margin-bottom: 8px;
 }
 
 .category-text {
-  font-size: 0.95rem;
-  color: #555;
-  line-height: 1.4;
+    margin-top: -1px;
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.4;
 }

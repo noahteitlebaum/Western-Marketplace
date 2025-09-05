@@ -1,0 +1,8 @@
+.footer {
+    margin-top: 100px;
+    position: relative;
+    width: 99.5vw;
+    height: 30vh;
+    margin-left: calc(50% - 50vw);
+    background-color: #DDDDDD; /* light gray background color */
+}

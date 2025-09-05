@@ -1,5 +1,6 @@
 import './App.css'
 import NavBar from './components/NavBar'
+import Footer from './components/Footer'
 import Home from './pages/Home'
 import Browse from './pages/Browse'
 import Sell from './pages/Sell'
@@ -22,6 +23,7 @@ function App() {
           <Route path="/signup" element={<Signup /> } />
         </Routes>
       </main> 
+      <Footer />
     </div>
   )
 }

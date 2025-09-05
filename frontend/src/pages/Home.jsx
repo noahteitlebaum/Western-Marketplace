@@ -48,57 +48,47 @@ function Home() {
                <h4 className="browse-text">Find exactly what you need, organized by category</h4>
             </div>
             
-            <div className="category-row">
-                <div className="textbooks">
-                    <div className="category-box">
-                        <div className="category-icon-circle">
-                            <img src={TextbooksIcon} alt="Textbooks" className="category-img"/>
-                        </div>
-                        <h3 className="category-title">Textbooks</h3>
-                        <p className="category-text">Find textbooks for all courses</p>
+            <form className="category-row">
+                <button className="category-box textbooks">
+                    <div className="category-icon-circle">
+                        <img src={TextbooksIcon} alt="Textbooks" className="category-img"/>
                     </div>
-                </div>
+                    <h3 className="category-title">Textbooks</h3>
+                    <p className="category-text">Find textbooks for all courses</p>
+                </button>
 
-                <div className="electronics">
-                    <div className="category-box">
-                        <div className="category-icon-circle">
-                            <img src={ElectronicsIcon} alt="Electronics" className="category-img"/>
-                        </div>
-                        <h3 className="category-title">Electronics</h3>
-                        <p className="category-text">Laptops, calculators, tablets</p>
+                <button className="category-box electronics">
+                    <div className="category-icon-circle">
+                        <img src={ElectronicsIcon} alt="Electronics" className="category-img"/>
                     </div>
-                </div>
+                    <h3 className="category-title">Electronics</h3>
+                    <p className="category-text">Laptops, calculators, tablets</p>
+                </button>
 
-                <div className="housing">
-                    <div className="category-box">
-                        <div className="category-icon-circle">
-                            <img src={HousingIcon} alt="Housing" className="category-img"/>
-                        </div>
-                        <h3 className="category-title">Housing</h3>
-                        <p className="category-text">Find roommates and student housing</p>
+                <button className="category-box housing">
+                    <div className="category-icon-circle">
+                        <img src={HousingIcon} alt="Housing" className="category-img"/>
                     </div>
-                </div>
+                    <h3 className="category-title">Housing</h3>
+                    <p className="category-text">Find roommates and student housing</p>
+                </button>
 
-                <div className="furniture">
-                    <div className="category-box">
-                        <div className="category-icon-circle">
-                            <img src={FurnitureIcon} alt="Furniture" className="category-img"/>
-                        </div>
-                        <h3 className="category-title">Furniture</h3>
-                        <p className="category-text">Desks, chairs, shelves</p>
+                <button className="category-box furniture">
+                    <div className="category-icon-circle">
+                        <img src={FurnitureIcon} alt="Furniture" className="category-img"/>
                     </div>
-                </div>
+                    <h3 className="category-title">Furniture</h3>
+                    <p className="category-text">Desks, chairs, shelves</p>
+                </button>
 
-                <div className="transportation">
-                    <div className="category-box">
-                        <div className="category-icon-circle">
-                            <img src={TransportationIcon} alt="Transportation" className="category-img"/>
-                        </div>
-                        <h3 className="category-title">Transportation</h3>
-                        <p className="category-text">Bikes, scooters, rideshares</p>
+                <button className="category-box transportation">
+                    <div className="category-icon-circle">
+                        <img src={TransportationIcon} alt="Transportation" className="category-img"/>
                     </div>
-                </div>
-            </div>
+                    <h3 className="category-title">Transportation</h3>
+                    <p className="category-text">Bikes, scooters, rideshares</p>
+                </button>
+            </form>
         </>
     )
 }
