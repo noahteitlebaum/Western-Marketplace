@@ -63,5 +63,104 @@
 }
 
 .browse-title {
-    font-size: 2rem;
+    margin-top: 3rem;
+    font-size: 2.3rem;
+}
+
+.browse-text {
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+
+.category-row {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding: 20px;
+}
+
+.category-box {
+  flex: 0 0 250px;
+  height: 200px;
+  width: 200px;
+  border-radius: 15px;
+  background-color: #f9f9f9;
+  padding: 20px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: flex-start;
+  border: 2px solid #ccc;
+  text-align: center;
+  margin: auto 5px;
+}
+
+.category-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+.category-icon-circle {
+  width: 65px;
+  height: 65px;
+  border: 2px solid #2b6cb0;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 12px auto;
+  background: #fff !important;
+  flex-shrink: 0;
+}
+
+.textbooks .category-box, 
+.textbooks .category-icon-circle {
+    background-color: #ebf4ff;
+    border-color: #2b6cb0;
+}
+
+.electronics .category-box, 
+.electronics .category-icon-circle {
+    background-color: #f3e8ff;
+    border-color: #805ad5;
+}
+
+.housing .category-box, 
+.housing .category-icon-circle {
+    background-color: #e6fffa;
+    border-color: #38a169;
+}
+
+.furniture .category-box, 
+.furniture .category-icon-circle {
+    background-color: #fffaf0;
+    border-color: #dd6b20;
+}
+
+.transportation .category-box, 
+.transportation .category-icon-circle {
+    background-color: #ffe5e5;
+    border-color: #e53e3e;
+}
+
+.category-img {
+    width: 40px;
+    height: 40px;
+    display: block;
+    margin: 0 auto;
+}
+
+.category-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 8px;
+}
+
+.category-text {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.4;
 }
