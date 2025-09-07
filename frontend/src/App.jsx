@@ -7,23 +7,35 @@ import Sell from './pages/Sell'
 import Login from './pages/Login'
 import Signup from './pages/Signup'
 
-import { Routes, Route } from "react-router-dom"
+import { Routes, Route, Outlet } from "react-router-dom"
+
+function Layout() {
+  return (
+    <>
+      <NavBar />
+      <Outlet /> {/** Render child routes */}
+      <Footer />
+    </>
+  )
+}
 
 function App() {
-  
   return (
     <div>
-      <NavBar />
       <main className="main-content">
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/browse" element={<Browse />} />
-          <Route path="/sell" element={<Sell />} />
+          { /** Routes with Navbar */}
+          <Route element={<Layout />}>
+            <Route path="/" element={<Home />} />
+            <Route path="/browse" element={<Browse />} />
+            <Route path="/sell" element={<Sell />} />
+          </Route>
+        
+          { /** Routes without Navbar */}
           <Route path="/login" element={<Login /> } />
           <Route path="/signup" element={<Signup /> } />
         </Routes>
       </main> 
-      <Footer />
     </div>
   )
 }
