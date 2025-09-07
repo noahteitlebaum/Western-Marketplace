@@ -1,5 +1,7 @@
 import { useState } from "react"
 
+import "../css/Login.css"
+
 export default function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -14,7 +16,7 @@ export default function Login() {
     <div>
       {/** Header */}
       <div className="">
-        <h1 className="">Log In</h1>
+        <h1 className=""> Log In </h1>
       </div>
 
       <form action="" onSubmit={handleSubmit}>
@@ -30,9 +32,9 @@ export default function Login() {
           value={password}
           onChange={(e)=>setPassword(e.target.value)}
         />
-        <button type="submit">Log In</button>
+        <button type="submit"> Log In </button>
       </form>
-      <a href="/Signup">Sign Up</a>
+      <a href="/Signup"> Sign Up </a>
     </div>
   )
 }

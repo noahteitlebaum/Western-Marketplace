@@ -1,5 +1,7 @@
 import { use, useState } from "react"
 
+import "../css/Signup.css"
+
 export default function Signup() {
   const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
@@ -20,15 +22,12 @@ export default function Signup() {
   }
   
   return (
-    <div className="">
+    <div className="container">
 
-      {/** Header */}
-      <div className="">
-        <h1 className="">Sign Up</h1>
-      </div>
-
-      <div>
-        <form action="" onSubmit={handleSubmit}>       
+      {/** Left side - form section */}
+      <div className="form-section">
+        <h1 className="title"> Sign Up </h1>
+        <form className="form" onSubmit={handleSubmit}>       
           <input 
             type="text" 
             placeholder="Username"
@@ -54,10 +53,16 @@ export default function Signup() {
             value={confirmPassword} 
             onChange={(e)=>setConfirmPassword(e.target.value)}
           />
-          <button type="submit">Sign Up</button>
+          <button type="submit"> Sign Up </button>
         </form>
+
+        <a href="/Login" className="login-link"> Log In </a>
       </div>
-      <a href="/Login">Log In</a>
+      
+      {/** Right side - image */}
+      <div className="image-section">
+        <img src="../assets/images/western-wallpaper.jpg" alt="Signup visual" />
+      </div>
     </div>
   )
 }
