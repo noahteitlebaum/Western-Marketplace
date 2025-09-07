@@ -13,6 +13,7 @@ export default function Login() {
         <div>
           <input type="password" placeholder="Password" />
         </div>
+        <button type="submit">Log In</button>
       </form>
       <a href="/Signup">Sign Up</a>
     </div>
