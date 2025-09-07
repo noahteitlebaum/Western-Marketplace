@@ -1,16 +1,25 @@
-# MOST IMPORTANT
+# Quick fix:
+- Fix navbar being to big
+- Fix navbar font
+- Fix css for signup page (idk why it is not pushing to the left of the screen)
 
-For the homepage:
-- Search bar for items you are looking for
-- Browse by category section (textbooks, housing, electronics...)
-- Featured products
-
+# Homepage:
 - Bottom information
 - Sign in page
 
-Item class/object generic (Noah)
-- subclasses/inheritance for things like textbooks, housing, etc... 
+# Browse Page:
+- Everything
 
-Sign in page (Johnathon)
+# Sell page:
+- Everything
 
-Setup the server
+# Sign up/login page:
+- Connect accounts to backend
+- Find image for right side of the screen
+- Do css for login page
+- Email/username validity
+
+# Other
+- Item class/object generic. Subclasses/inheritance for things like textbooks, housing, etc... (Noah)
+- Setup the server
+
