@@ -8,16 +8,16 @@ export default function Signup() {
       <div>
         <form action="">
           <div>          
-            <input type="" placeholder="Username" />
+            <input type="text" placeholder="Username" />
           </div>
           <div>
-            <input type="" placeholder="Email"/>
+            <input type="email" placeholder="Email"/>
           </div>
           <div>
-            <input type="" placeholder="Password" />
+            <input type="password" placeholder="Password" />
           </div>
           <div>
-            <input type="" placeholder="Confirm Password" />
+            <input type="password" placeholder="Confirm Password" />
           </div>
         </form>
       </div>

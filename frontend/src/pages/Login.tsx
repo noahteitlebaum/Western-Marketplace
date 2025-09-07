@@ -8,10 +8,10 @@ export default function Login() {
 
       <form action="">
         <div>
-          <input type="" placeholder="Email" />
+          <input type="email" placeholder="Email" />
         </div>
         <div>
-          <input type="" placeholder="Password" />
+          <input type="password" placeholder="Password" />
         </div>
       </form>
       <a href="/Signup">Sign Up</a>
