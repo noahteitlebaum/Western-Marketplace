@@ -53,7 +53,7 @@ export default function Signup() {
             value={confirmPassword} 
             onChange={(e)=>setConfirmPassword(e.target.value)}
           />
-          <button type="submit"> Sign Up </button>
+          <button className="signup-button" type="submit"> Sign Up </button>
         </form>
 
         <a href="/Login" className="login-link"> Log In </a>

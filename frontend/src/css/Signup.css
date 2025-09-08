@@ -40,7 +40,7 @@
   border-color: #333;
 }
 
-button {
+.signup-button {
   padding: 0.75rem;
   border: none;
   border-radius: 8px;
@@ -50,7 +50,7 @@ button {
   cursor: pointer;
 }
 
-button:hover {
+.signup-button:hover {
   background: #555;
 }
 
