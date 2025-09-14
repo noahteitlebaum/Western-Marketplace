@@ -1,6 +1,9 @@
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
+// Local dependencies
+import com.example.app.model.User;
+
 @Service
 public class UserService {
 
