@@ -1,24 +1,54 @@
-import { use, useState } from "react"
+import { useState } from "react"
 
 import "../css/Signup.css"
 
 export default function Signup() {
-  const [username, setUsername] = useState("");
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-  const [confirmPassword, setConfirmPassword] = useState("");
+  const [username, setUsername] = useState<string>("");
+  const [email, setEmail] = useState<string>("");
+  const [password, setPassword] = useState<string>("");
+  const [confirmPassword, setConfirmPassword] = useState<string>("");
+  const [error, setError] = useState<string | null>(null);
+  const [success, setSuccess] = useState<string | null>(null);
 
-  const handleSubmit = (event: React.FormEvent) => {
+  const handleSubmit = async (event: React.FormEvent) => {
     event.preventDefault();
+    setError(null);
+    setSuccess(null);
+
+    if (!username || !email || !password) {
+      setError("All fields are required");
+      return;
+    }
+
+    // Validate email address
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+      setError("Invalid email format");
+      return;
+    }
 
     if (password !== confirmPassword) {
-      alert("Passwords do not match");
+      setError("Passwords do not match");
       return;
     }
 
     console.log({username, email, password})
 
-    // send information to backend to create an account.
+    try {
+      const response = await fetch("http://localhost:8080/api/auth/signup", {
+        method: "POST",
+        headers: { "Content-Type": "application/json"},
+        body: JSON.stringify({ username, email, password }),
+      });
+
+      if (!response.ok) {
+        const errorText = await response.text();
+        setError(errorText);
+        return;
+      }
+    } catch (err) {
+      setError("Something went wrong. Please try again");
+      console.log(err);
+    }
   }
   
   return (
@@ -55,13 +85,14 @@ export default function Signup() {
           />
           <button className="signup-button" type="submit"> Sign Up </button>
         </form>
+        {error && <p className="login-link">{error}</p>}
 
         <a href="/Login" className="login-link"> Log In </a>
       </div>
       
       {/** Right side - image */}
       <div className="image-section">
-        <img src="../assets/images/western-wallpaper.jpg" alt="Signup visual" />
+        <img src="/assets/images/western-wallpaper.jpg" alt="Signup visual" />
       </div>
     </div>
   )
