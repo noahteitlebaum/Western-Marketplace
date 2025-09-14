@@ -1,3 +1,8 @@
+# VITAL:
+mvn spring-boot:run not working, error as follows,
+Caused by: java.lang.NoClassDefFoundError: io/r2dbc/spi/ValidationDepth
+need to add dependency to pom.xml in backend
+
 # Quick fix:
 - Fix navbar being to big
 - Fix navbar font
