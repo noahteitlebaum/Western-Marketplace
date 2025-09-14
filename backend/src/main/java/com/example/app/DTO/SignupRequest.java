@@ -3,5 +3,5 @@ public class SignupRequest {
     private String email;
     private String password;
 
-    // getters and setters
+    
 }
